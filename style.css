@@ -1,0 +1,206 @@
+/* Algemene stijlen */
+
+.navbar {
+    height: 50px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.logo {
+    text-decoration: none;
+}
+
+.logo-img {
+    height: 100%;
+}
+
+
+.login-button {
+    margin-right: 10px;
+}
+
+.login-button a, .login-button span {
+    text-decoration: none;
+    padding: 10px 20px;
+    border: 1px solid #333;
+    border-radius: 5px;
+    color: #333;
+    background-color: #fff;
+    transition: background-color 0.3s ease;
+}
+
+.login-button a:hover {
+    background-color: #333;
+    color: #fff;
+}
+.contener{
+    display: flex;
+}
+#map {
+    height:90%;
+    width: 100%;
+    margin: auto;
+    border: 1px solid;
+}
+
+#klachttabel {
+    width: 90%;
+}
+
+.login-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid #ccc;
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+}
+@media screen and (max-width: 768px) {
+    .login-container {
+        border: 1px solid #ccc;
+        padding: 20px;
+        text-align: center;
+    }
+}
+
+
+.form-container {
+    /*border: 1px solid #ccc;*/
+    /*padding: 20px;*/
+    /*max-width: 600px;*/
+    width: 100%;
+}
+@media screen and (max-width: 768px) {
+    .form-container {
+        width: 100%;
+    }
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 8px;
+}
+
+input {
+    padding: 8px;
+    margin-bottom: 16px;
+}
+
+button {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+#klachtentabel {
+    margin-top: 20px;
+    width: 70%;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tbody tr:hover {
+    background-color: #e5e5e5;
+}
+
+.klacht-foto {
+    max-width: 100px;
+    max-height: 100px;
+}
+
+.succesmelding {
+    text-align: center;
+    background: #4caf50;
+    font-size: xx-large;
+}
+
+.zoekbaar {
+    display: block;
+}
+
+/* Media queries voor tablets en smartphones */
+
+@media only screen and (max-width: 768px) {
+    .navbar-container {
+        /*flex-direction: column;*/
+        /*align-items: flex-start;*/
+        flex-direction: row;
+    }
+
+    .login-button {
+        margin-top: 10px;
+        margin-right: 0;
+    }
+
+    .login-button a, .login-button span {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    .form-container {
+        width: 90%;
+    }
+
+    th, td {
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .form-container {
+        width: 80%;
+    }
+
+    th, td {
+        font-size: 12px;
+    }
+}
+.aherf{
+    margin: 5px;
+    display: inline-block;
+    border-radius: 5px;
+    border: 2px solid blanchedalmond;
+    padding: 4px;
+    background-color: #4caf50;
+    color: antiquewhite;
+}
+.modal{
+    display: block;
+    width: 30%;
+    margin: auto;
+}
